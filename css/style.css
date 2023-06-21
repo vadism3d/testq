@@ -200,8 +200,8 @@ button{
 
 .alert {
     position: fixed;
-    top: 30px;
-    left: 30px;
+    top: 10px;
+    left: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f8f8f8;
@@ -275,13 +275,23 @@ button{
     .menu-icon{
         display: block;
     }
+
+    
+}
+@media (width < 750px) {
+    .pins , .about_pins{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .advantage_pin{
+        column-gap: 10px;
+    }
     
 }
 
-
 @media (width < 500px) {
     .container{
-        max-width: 400px;
+        max-width: 90%;
     }
     .main_title {
         font-size: 35px;
@@ -320,9 +330,9 @@ button{
       
 }
 
-@media (width < 375px) {
+@media (width < 440px) {
     .container{
-        max-width: 300px;
+        max-width: 90%;
     }
     .main_text{
         font-size: 13px;
